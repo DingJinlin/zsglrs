@@ -1,6 +1,5 @@
 *.docx
 *.doc
-*.html
 *.7z
 Output/
 target/
