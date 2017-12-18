@@ -1,0 +1,253 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:true,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:9,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;valo&quot;,&quot;GRID_TYPE&quot;:&quot;RegularGrid,20&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+  <meta name="package-mapping" content="com_vaadin:com.vaadin">
+ </head>
+ <body>
+  <vaadin-horizontal-layout size-full>
+   <vaadin-panel caption="操作菜单" width="300px" height-full>
+    <vaadin-accordion caption="操作菜单" size-full tabindex="1">
+     <tab caption="系统数据管理" selected>
+      <vaadin-tree size-full>
+       <node text="用户及权限设置"></node>
+       <node text="系统基本设置"></node>
+       <node text="使用单位设置"></node>
+       <node text="单位人员设置"></node>
+       <node text="费用设置"></node>
+       <node text="常用字典设置"></node>
+       <node text="智能语音设置"></node>
+       <node text="拼音五笔码设置"></node>
+       <node text="收费套餐设置"></node>
+       <node text="西医途径设置">
+        <node text="西医用药途径设置"></node>
+        <node text="处方用法次数设置"></node>
+       </node>
+       <node text="药房设置"></node>
+       <node text="系统报表打印设置"></node>
+       <node text="数据初始化"></node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="药房管理">
+      <vaadin-tree size-full>
+       <node text="数据字典设置">
+        <node text="中药功效设置"></node>
+        <node text="西药功效设置"></node>
+        <node text="生产商设置"></node>
+        <node text="供货商设置"></node>
+        <node text="客户设置"></node>
+       </node>
+       <node text="药品/材料/费用设置"></node>
+       <node text="药房管理">
+        <node text="药房入库"></node>
+        <node text="药房出库"></node>
+        <node text="药房调价"></node>
+        <node text="药房盘点"></node>
+        <node text="药房库存调整"></node>
+        <node text="药品采购单"></node>
+       </node>
+       <node text="药品GPS管理">
+        <node text="一次性物品销毁管理"></node>
+        <node text="不合格药品登记"></node>
+        <node text="特殊药品登记"></node>
+        <node text="库房温湿度房记录"></node>
+        <node text="企业验收养护人员档案"></node>
+        <node text="业务培训记录"></node>
+        <node text="用户投诉记录"></node>
+        <node text="顾客意见登记"></node>
+        <node text="药品GPS管理文档"></node>
+        <node text="药品管理法"></node>
+       </node>
+       <node text="药品报表查询">
+        <node text="药房入库查询"></node>
+        <node text="药房出库查询"></node>
+        <node text="药房调价查询"></node>
+        <node text="药房库存查询"></node>
+        <node text="药品积压/缺货预警"></node>
+        <node text="药品有效期预警"></node>
+        <node text="药房入库明细汇总查询"></node>
+        <node text="药房出库明细汇总查询"></node>
+        <node text="药房入库统计"></node>
+        <node text="药房出库统计"></node>
+        <node text="收费项目分析(按医生)"></node>
+        <node text="收费项目分析(按科室)"></node>
+        <node text="收费项目分析(按全院)"></node>
+       </node>
+       <node text="抗菌药物使用分析查询">
+        <node text="抗菌药物使用分析(按医生)"></node>
+        <node text="抗菌药物使用分析(按科室)"></node>
+        <node text="抗菌药物使用分析(按全院)"></node>
+       </node>
+       <node text="医保目录对码"></node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="门诊挂号管理">
+      <vaadin-tree>
+       <node text="门诊挂号管理"></node>
+       <node text="挂号报表查询">
+        <node text="分医生明细查询"></node>
+        <node text="分科室明细查询"></node>
+        <node text="分收费员明细查询"></node>
+        <node text="挂号汇总查询"></node>
+       </node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="门诊前台管理">
+      <vaadin-tree>
+       <node text="门诊划价管理"></node>
+       <node text="门诊收费管理"></node>
+       <node text="发药管理">
+        <node text="门诊发药管理"></node>
+        <node text="门诊退药管理"></node>
+        <node text="住院发药管理"></node>
+        <node text="住院退药管理"></node>
+       </node>
+       <node text="门诊报表查询">
+        <node text="门诊划价查询"></node>
+        <node text="门诊收费查询"></node>
+        <node text="门诊发药查询"></node>
+        <node text="门诊记账查询"></node>
+        <node text="门诊退药查询"></node>
+       </node>
+       <node text="收费日结清单"></node>
+       <node text="已日结单据作废"></node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="门诊护士站">
+      <vaadin-tree>
+       <node text="护士划价记账"></node>
+       <node text="门诊注射输液管理"></node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="医生工作站">
+      <vaadin-tree>
+       <node text="中西医处方"></node>
+       <node text="中西医验方"></node>
+       <node text="处方规类整理"></node>
+       <node text="门诊病历模板"></node>
+       <node text="医学文书"></node>
+       <node text="处方字典设置">
+        <node text="中医病症设置"></node>
+        <node text="西医病症设置"></node>
+        <node text="中西医症状设置"></node>
+        <node text="儿童处方剂量设置"></node>
+       </node>
+       <node text="处(验)方共享设置"></node>
+       <node text="处方报表查询">
+        <node text="门诊处方日志"></node>
+        <node text="患者账务管理"></node>
+       </node>
+      </vaadin-tree>
+     </tab>
+     <tab caption="住院管理">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="护士工作站">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="医技工作站">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="住院病案管理">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="物资管理">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="社区服务及档案管理">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="财务管理">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+     <tab caption="系统辅助功能">
+      <vaadin-accordion size-full></vaadin-accordion>
+     </tab>
+    </vaadin-accordion>
+   </vaadin-panel>
+   <vaadin-tab-sheet primary-style-name="h-tabsheet" size-full :expand>
+    <tab caption="中西医门诊处方---初诊" selected>
+     <vaadin-tab-sheet primary-style-name="h-tabsheet" size-full>
+      <tab caption="门诊病历" selected>
+       <vaadin-panel size-full _id="门诊病历">
+        <vaadin-twin-col-select size-full>
+         <option>Option 1</option>
+         <option>Option 2</option>
+         <option>Option 3</option>
+        </vaadin-twin-col-select>
+       </vaadin-panel>
+      </tab>
+      <tab caption="西医处方">
+       <vaadin-panel size-full _id="西医处方">
+        <vaadin-horizontal-split-panel>
+         <vaadin-vertical-layout width="80%" height-full>
+          <vaadin-vertical-layout>
+           <vaadin-horizontal-layout width-full>
+            <vaadin-text-field caption="日期" primary-style-name="h-textfield"></vaadin-text-field>
+            <vaadin-text-field caption="病案号" primary-style-name="h-textfield" readonly></vaadin-text-field>
+            <vaadin-text-field caption="处方号" primary-style-name="h-textfield" readonly></vaadin-text-field>
+            <vaadin-text-field readonly></vaadin-text-field>
+           </vaadin-horizontal-layout>
+           <vaadin-grid-layout></vaadin-grid-layout>
+          </vaadin-vertical-layout>
+         </vaadin-vertical-layout>
+         <vaadin-table selectable size-full>
+          <table>
+           <colgroup>
+            <col property-id="Project">
+            <col property-id="Status">
+           </colgroup>
+           <tbody>
+            <tr item-id="1">
+             <td>Customer Project 1</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="2">
+             <td>Customer Project 2</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="3">
+             <td>Customer Project 3</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="4">
+             <td>Customer Project 4</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="5">
+             <td>Customer Project 5</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="6">
+             <td>Customer Project 6</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="7">
+             <td>Customer Project 7</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="8">
+             <td>Customer Project 8</td>
+             <td>OK</td>
+            </tr>
+            <tr item-id="9">
+             <td>Customer Project 9</td>
+             <td>OK</td>
+            </tr>
+           </tbody>
+          </table>
+         </vaadin-table>
+        </vaadin-horizontal-split-panel>
+       </vaadin-panel>
+      </tab>
+      <tab caption="中医处方">
+       <vaadin-panel size-full _id="中医处方"></vaadin-panel>
+      </tab>
+     </vaadin-tab-sheet>
+    </tab>
+   </vaadin-tab-sheet>
+  </vaadin-horizontal-layout>
+ </body>
+</html>
