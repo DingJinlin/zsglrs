@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing size-full>
+   <vaadin-horizontal-layout spacing width-full>
+    <vaadin-label size-auto plain-text :middle>
+      天 
+    </vaadin-label>
+    <vaadin-text-field></vaadin-text-field>
+    <vaadin-label size-auto plain-text :expand></vaadin-label>
+    <vaadin-menu-bar :middle :right>
+     <menu>
+       清空 
+     </menu>
+     <menu>
+       刷新 
+     </menu>
+     <menu>
+       价 
+     </menu>
+     <menu>
+       列 
+     </menu>
+     <menu>
+       上移 
+     </menu>
+     <menu>
+       下移 
+     </menu>
+     <menu>
+       删除 
+     </menu>
+     <menu>
+       处方辅助 
+      <menu>
+        复制西医处方 
+      </menu>
+      <menu>
+        粘贴西医处方 
+      </menu>
+      <menu separator></menu>
+      <menu>
+        处方存为验方 
+      </menu>
+     </menu>
+     <menu>
+       预览 
+      <menu>
+        处方笺预览 
+      </menu>
+      <menu>
+        注射单预览 
+      </menu>
+      <menu>
+        输液单预览 
+      </menu>
+      <menu separator></menu>
+      <menu>
+        注射单预览(按次) 
+      </menu>
+      <menu>
+        输液单预览(按次) 
+      </menu>
+     </menu>
+    </vaadin-menu-bar>
+   </vaadin-horizontal-layout>
+   <vaadin-grid size-full editable _id="chufang" :expand>
+    <table>
+     <colgroup>
+      <col property-id="序号" sortable>
+      <col property-id="组" sortable>
+      <col property-id="药品名称" sortable>
+      <col property-id="规格" sortable>
+      <col property-id="单位" sortable>
+      <col property-id="天" sortable>
+      <col property-id="次" sortable>
+      <col property-id="皮试" sortable>
+      <col property-id="途径" sortable>
+      <col property-id="滴速" sortable>
+      <col property-id="单剂量" sortable>
+      <col property-id="总剂量" sortable>
+      <col property-id="服(用)法" sortable>
+      <col property-id="金额" sortable>
+     </colgroup>
+     <thead>
+      <tr default>
+       <th plain-text>序号</th>
+       <th plain-text>组</th>
+       <th plain-text>药品名称</th>
+       <th plain-text>规格</th>
+       <th plain-text>单位</th>
+       <th plain-text>天</th>
+       <th plain-text>次</th>
+       <th plain-text>皮试</th>
+       <th plain-text>途径</th>
+       <th plain-text>滴速</th>
+       <th plain-text>单剂量</th>
+       <th plain-text>总剂量</th>
+       <th plain-text>服(用)法</th>
+       <th plain-text>金额</th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+       <td>Customer Project 1</td>
+       <td>OK</td>
+      </tr>
+     </tbody>
+    </table>
+   </vaadin-grid>
+   <vaadin-grid-layout spacing width-full>
+    <row>
+     <column rowspan="2">
+      <vaadin-label size-auto plain-text :middle>
+        医嘱 
+      </vaadin-label>
+     </column>
+     <column rowspan="2" expand="1">
+      <vaadin-text-area size-full :middle></vaadin-text-area>
+     </column>
+     <column>
+      <vaadin-button plain-text :middle>
+        用量 
+      </vaadin-button>
+     </column>
+     <column>
+      <vaadin-text-field :middle></vaadin-text-field>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-button plain-text :middle>
+        禁忌 
+      </vaadin-button>
+     </column>
+     <column>
+      <vaadin-text-field :middle></vaadin-text-field>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

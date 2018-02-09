@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing>
+   <vaadin-horizontal-layout spacing width-full>
+    <vaadin-label size-auto plain-text :middle>
+      日期 
+    </vaadin-label>
+    <vaadin-text-field width="200px" :middle></vaadin-text-field>
+    <vaadin-label size-auto plain-text :middle>
+      病案号 
+    </vaadin-label>
+    <vaadin-text-field width="200px" :middle></vaadin-text-field>
+    <vaadin-label size-auto plain-text :middle>
+      处方号 
+    </vaadin-label>
+    <vaadin-text-field width="200px" :middle></vaadin-text-field>
+    <vaadin-text-field width="50px" :middle></vaadin-text-field>
+    <vaadin-option-group primary-style-name="h-select-optiongroup" :middle>
+     <option>初诊</option>
+     <option>复诊</option>
+    </vaadin-option-group>
+    <vaadin-label plain-text :expand></vaadin-label>
+   </vaadin-horizontal-layout>
+   <vaadin-grid-layout spacing id="" width-full _id="gL">
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        姓名 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field width="80px" :middle></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        性别 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field width="80px" :middle></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        年龄 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field width="80px" :middle></vaadin-text-field>
+     </column>
+     <column rowspan="2">
+      <vaadin-label size-auto plain-text :middle>
+        诊断 
+      </vaadin-label>
+     </column>
+     <column rowspan="2" expand="1">
+      <vaadin-text-area size-full _id="zhenduan" :middle></vaadin-text-area>
+     </column>
+     <column>
+      <vaadin-button plain-text :middle>
+        调西医病症 
+      </vaadin-button>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        地址 
+      </vaadin-label>
+     </column>
+     <column colspan="3">
+      <vaadin-text-field width-full :middle></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        日期 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field width-full></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-button width-full plain-text :middle>
+        调疾病 
+      </vaadin-button>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
