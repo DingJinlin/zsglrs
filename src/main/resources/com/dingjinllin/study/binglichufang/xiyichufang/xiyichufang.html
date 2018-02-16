@@ -4,32 +4,33 @@
   <meta charset="UTF-8">
   <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
   <meta name="vaadin-version" content="7.7.0">
+  <meta name="package-mapping" content="com_dingjinllin_study_binglichufang_xiyichufang:com.dingjinllin.study.binglichufang.xiyichufang">
  </head>
  <body>
-  <vaadin-vertical-layout size-auto>
-   <vaadin-menu-bar icon="fonticon://FontAwesome/f037">
-    <menu icon="fonticon://FontAwesome/f037">
-     <menu>
-       Open 
-     </menu>
-     <menu>
-       Save 
-     </menu>
-     <menu>
-       Preferences 
-     </menu>
-     <menu separator></menu>
-     <menu>
-       Quit 
-     </menu>
-    </menu>
-    <menu  icon="fonticon://FontAwesome/f037">
-      Edit 
-    </menu>
-    <menu description="Some description">
-      About 
-    </menu>
-   </vaadin-menu-bar>
-  </vaadin-vertical-layout>
+  <vaadin-horizontal-layout size-full>
+   <vaadin-horizontal-split-panel>
+    <vaadin-vertical-layout size-full>
+     <com_dingjinllin_study_binglichufang_xiyichufang-xycf_xx width-full></com_dingjinllin_study_binglichufang_xiyichufang-xycf_xx>
+     <com_dingjinllin_study_binglichufang_xiyichufang-xycf_cf size-full :expand></com_dingjinllin_study_binglichufang_xiyichufang-xycf_cf>
+    </vaadin-vertical-layout>
+    <vaadin-tab-sheet size-full>
+     <tab caption="西药" selected>
+      <vaadin-vertical-layout size-full>
+       <com_dingjinllin_study_binglichufang_xiyichufang-xycf_xy size-full></com_dingjinllin_study_binglichufang_xiyichufang-xycf_xy>
+      </vaadin-vertical-layout>
+     </tab>
+     <tab caption="西医验方">
+      <vaadin-vertical-layout size-full>
+       <com_dingjinllin_study_binglichufang_xiyichufang-xycf_xyyf size-full></com_dingjinllin_study_binglichufang_xiyichufang-xycf_xyyf>
+      </vaadin-vertical-layout>
+     </tab>
+     <tab caption="所有处方">
+      <vaadin-vertical-layout size-full>
+       <com_dingjinllin_study_binglichufang_xiyichufang-xycf_sycf size-full></com_dingjinllin_study_binglichufang_xiyichufang-xycf_sycf>
+      </vaadin-vertical-layout>
+     </tab>
+    </vaadin-tab-sheet>
+   </vaadin-horizontal-split-panel>
+  </vaadin-horizontal-layout>
  </body>
 </html>

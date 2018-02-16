@@ -12,10 +12,13 @@
       中西医病症 
     </menu>
     <menu>
-      西药类别 
+      西医病症 
     </menu>
     <menu>
-      调西药 
+      调西医验方 
+    </menu>
+    <menu>
+      追加验方 
     </menu>
     <menu>
       表列 
@@ -35,28 +38,18 @@
     <table>
      <colgroup>
       <col property-id="">
-      <col property-id="名称">
-      <col property-id="别名">
+      <col property-id="标实">
+      <col property-id="验方名">
       <col property-id="拼音码">
-      <col property-id="规格">
-      <col property-id="单位">
-      <col property-id="售价">
-      <col property-id="处方用法">
-      <col property-id="默认剂量">
-      <col property-id="预警剂量">
-      <col property-id="库存">
-      <col property-id="药品含量">
-      <col property-id="含量单位">
-      <col property-id="途径">
+      <col property-id="合计">
+      <col property-id="类别1">
+      <col property-id="类别2">
+      <col property-id="类别3">
+      <col property-id="类别4">
      </colgroup>
      <tbody>
       <tr item-id="1">
        <td>1</td>
-       <td>OK</td>
-       <td>OK</td>
-       <td>OK</td>
-       <td>OK</td>
-       <td>OK</td>
        <td>OK</td>
        <td>OK</td>
        <td>OK</td>
@@ -70,9 +63,9 @@
     </table>
    </vaadin-table>
    <vaadin-horizontal-layout spacing width-full>
-    <vaadin-text-area caption="西药说明" size-full :expand></vaadin-text-area>
-    <vaadin-text-area caption="西药功效" size-full :expand></vaadin-text-area>
-    <vaadin-text-area caption="药物禁忌" size-full :expand></vaadin-text-area>
+    <vaadin-text-area caption="西医验方笺" size-full :expand></vaadin-text-area>
+    <vaadin-text-area caption="西医验方功效" size-full :expand></vaadin-text-area>
+    <vaadin-text-area caption="西医验方说明" size-full :expand></vaadin-text-area>
    </vaadin-horizontal-layout>
   </vaadin-vertical-layout>
  </body>
