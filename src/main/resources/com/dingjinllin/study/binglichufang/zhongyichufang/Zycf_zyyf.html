@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ <meta name="vaadin-version" content="7.7.0">
+</head>
+<body>
+<vaadin-vertical-layout spacing size-full>
+ <vaadin-menu-bar>
+  <menu>
+   中西医病症
+  </menu>
+  <menu>
+   中医病症
+  </menu>
+  <menu>
+   调中医验方
+  </menu>
+  <menu>
+   追加验方
+  </menu>
+  <menu>
+   表列
+  </menu>
+ </vaadin-menu-bar>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-label size-auto plain-text :middle>
+   智能检索:
+  </vaadin-label>
+  <vaadin-text-field :middle></vaadin-text-field>
+  <vaadin-button plain-text :middle>
+   全显
+  </vaadin-button>
+  <vaadin-label plain-text :expand></vaadin-label>
+ </vaadin-horizontal-layout>
+ <vaadin-table selectable size-full :expand>
+  <table>
+   <colgroup>
+    <col property-id="">
+    <col property-id="标实">
+    <col property-id="验方名">
+    <col property-id="拼音码">
+    <col property-id="合计">
+    <col property-id="类别1">
+    <col property-id="类别2">
+    <col property-id="类别3">
+    <col property-id="类别4">
+   </colgroup>
+   <tbody>
+   <tr item-id="1">
+    <td>1</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+   </tr>
+   </tbody>
+  </table>
+ </vaadin-table>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-text-area caption="中医验方笺" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="中医验方功效" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="中医验方说明" size-full :expand></vaadin-text-area>
+ </vaadin-horizontal-layout>
+</vaadin-vertical-layout>
+</body>
+</html>

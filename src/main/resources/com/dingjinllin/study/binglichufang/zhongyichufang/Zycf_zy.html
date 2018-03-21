@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ <meta name="vaadin-version" content="7.7.0">
+</head>
+<body>
+<vaadin-vertical-layout spacing size-full>
+ <vaadin-menu-bar>
+  <menu>
+   中西医病症
+  </menu>
+  <menu>
+   中药类别
+  </menu>
+  <menu>
+   调中药
+  </menu>
+  <menu>
+   表列
+  </menu>
+ </vaadin-menu-bar>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-label size-auto plain-text :middle>
+   智能检索:
+  </vaadin-label>
+  <vaadin-text-field :middle></vaadin-text-field>
+  <vaadin-button plain-text :middle>
+   全显
+  </vaadin-button>
+  <vaadin-label plain-text :expand></vaadin-label>
+ </vaadin-horizontal-layout>
+ <vaadin-table selectable size-full :expand>
+  <table>
+   <colgroup>
+    <col property-id="">
+    <col property-id="名称">
+    <col property-id="别名">
+    <col property-id="拼音码">
+    <col property-id="规格">
+    <col property-id="单位">
+    <col property-id="售价">
+    <col property-id="处方用法">
+    <col property-id="默认剂量">
+    <col property-id="预警剂量">
+    <col property-id="库存">
+    <col property-id="药品含量">
+    <col property-id="含量单位">
+    <col property-id="途径">
+   </colgroup>
+   <tbody>
+   <tr item-id="1">
+    <td>1</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+   </tr>
+   </tbody>
+  </table>
+ </vaadin-table>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-text-area caption="中药说明" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="中药功效" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="药物禁忌" size-full :expand></vaadin-text-area>
+ </vaadin-horizontal-layout>
+</vaadin-vertical-layout>
+</body>
+</html>

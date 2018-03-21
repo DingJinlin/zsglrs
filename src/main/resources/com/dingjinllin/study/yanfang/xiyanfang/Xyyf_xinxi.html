@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="7.7.0">
+  <meta name="package-mapping" content="com_vaadin:com.vaadin">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing>
+   <vaadin-grid-layout spacing width-full>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        类别1: 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="bt_lb1" :middle></vaadin-text-field>
+     </column>
+     <column rowspan="4">
+      <vaadin-button height-full plain-text _id="bt_dyflb" :middle>
+        调验方类别 
+      </vaadin-button>
+     </column>
+     <column rowspan="2">
+      <vaadin-label size-auto plain-text :middle>
+        验方功效 
+      </vaadin-label>
+     </column>
+     <column rowspan="2" colspan="2" expand="1,0">
+      <vaadin-text-area size-full _id="ta_yfgx" :middle></vaadin-text-area>
+     </column>
+     <column rowspan="2">
+      <vaadin-button plain-text _id="bt_bjyfgx">
+        编辑 
+      </vaadin-button>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        类别2 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="bt_lb2" :middle></vaadin-text-field>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        类别3 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="bt_lb3" :middle></vaadin-text-field>
+     </column>
+     <column rowspan="2">
+      <vaadin-label size-auto plain-text :middle>
+        验方说明 
+      </vaadin-label>
+     </column>
+     <column rowspan="2" colspan="2">
+      <vaadin-text-area size-full _id="ta_yfsm" :middle></vaadin-text-area>
+     </column>
+     <column rowspan="2">
+      <vaadin-button plain-text _id="bf_bjyfsm">
+        编辑 
+      </vaadin-button>
+     </column>
+    </row>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        类别4 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="bt_lb4" :middle></vaadin-text-field>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+   <vaadin-grid-layout spacing width-full>
+    <row>
+     <column>
+      <vaadin-label size-auto plain-text :middle :right>
+        方名 
+      </vaadin-label>
+     </column>
+     <column expand="1">
+      <vaadin-text-field width-full _id="tf_fm" :middle></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-label size-auto plain-text :middle :right>
+        拼音码 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="tf_pym" :middle></vaadin-text-field>
+     </column>
+     <column>
+      <vaadin-label size-auto plain-text :middle>
+        五笔码 
+      </vaadin-label>
+     </column>
+     <column>
+      <vaadin-text-field _id="bt_wbm" :middle></vaadin-text-field>
+     </column>
+    </row>
+   </vaadin-grid-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

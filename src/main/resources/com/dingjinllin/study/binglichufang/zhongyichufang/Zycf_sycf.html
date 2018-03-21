@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ <meta name="vaadin-version" content="7.7.0">
+</head>
+<body>
+<vaadin-vertical-layout spacing size-full>
+ <vaadin-menu-bar>
+  <menu>
+   调西医处方
+  </menu>
+  <menu>
+   追加西医处方
+  </menu>
+  <menu>
+   表列
+  </menu>
+ </vaadin-menu-bar>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-label size-auto plain-text :middle>
+   智能检索:
+  </vaadin-label>
+  <vaadin-text-field :middle></vaadin-text-field>
+  <vaadin-button plain-text :middle>
+   检索所有西医处方
+  </vaadin-button>
+  <vaadin-button plain-text :middle>
+   全显
+  </vaadin-button>
+  <vaadin-label plain-text :expand></vaadin-label>
+ </vaadin-horizontal-layout>
+ <vaadin-table selectable size-full :expand>
+  <table>
+   <colgroup>
+    <col property-id="">
+    <col property-id="标实">
+    <col property-id="处方日期">
+    <col property-id="处方号">
+    <col property-id="姓名">
+    <col property-id="拼音码">
+    <col property-id="性别">
+    <col property-id="出生日期">
+    <col property-id="本单应收">
+    <col property-id="初步诊断">
+    <col property-id="药物过敏史">
+    <col property-id="卡号">
+    <col property-id="地址">
+    <col property-id="记账类型">
+    <col property-id="备注">
+    <col property-id="现付金额">
+   </colgroup>
+   <tbody>
+   <tr item-id="1">
+    <td>1</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+    <td>OK</td>
+   </tr>
+   </tbody>
+  </table>
+ </vaadin-table>
+ <vaadin-horizontal-layout spacing width-full>
+  <vaadin-text-area caption="中医处方笺" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="中医诊断" size-full :expand></vaadin-text-area>
+  <vaadin-text-area caption="药物过敏史" size-full :expand></vaadin-text-area>
+ </vaadin-horizontal-layout>
+</vaadin-vertical-layout>
+</body>
+</html>

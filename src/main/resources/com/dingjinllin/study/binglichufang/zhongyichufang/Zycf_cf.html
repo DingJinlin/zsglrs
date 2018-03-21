@@ -9,7 +9,7 @@
   <vaadin-vertical-layout spacing size-full>
    <vaadin-horizontal-layout spacing width-full>
     <vaadin-label size-auto plain-text :middle>
-      天 
+      剂数 
     </vaadin-label>
     <vaadin-text-field width="50px" maxlength="3" :middle></vaadin-text-field>
     <vaadin-label size-auto plain-text :expand></vaadin-label>
@@ -38,10 +38,10 @@
      <menu>
        处方辅助 
       <menu>
-        复制西医处方 
+        复制中医处方 
       </menu>
       <menu>
-        粘贴西医处方 
+        粘贴中医处方 
       </menu>
       <menu separator></menu>
       <menu>
@@ -50,81 +50,43 @@
      </menu>
      <menu>
        预览 
-      <menu>
-        处方笺预览 
-      </menu>
-      <menu>
-        注射单预览 
-      </menu>
-      <menu>
-        输液单预览 
-      </menu>
-      <menu separator></menu>
-      <menu>
-        注射单预览(按次) 
-      </menu>
-      <menu>
-        输液单预览(按次) 
-      </menu>
      </menu>
     </vaadin-menu-bar>
    </vaadin-horizontal-layout>
-   <vaadin-grid size-full editable _id="chufang" :expand>
-    <table>
-     <colgroup>
-      <col property-id="序号" sortable>
-      <col property-id="组" sortable>
-      <col property-id="药品名称" sortable>
-      <col property-id="规格" sortable>
-      <col property-id="单位" sortable>
-      <col property-id="天" sortable>
-      <col property-id="次" sortable>
-      <col property-id="皮试" sortable>
-      <col property-id="途径" sortable>
-      <col property-id="滴速" sortable>
-      <col property-id="单剂量" sortable>
-      <col property-id="总剂量" sortable>
-      <col property-id="服(用)法" sortable>
-      <col property-id="金额" sortable>
-     </colgroup>
-     <thead>
-      <tr default>
-       <th plain-text>序号</th>
-       <th plain-text>组</th>
-       <th plain-text>药品名称</th>
-       <th plain-text>规格</th>
-       <th plain-text>单位</th>
-       <th plain-text>天</th>
-       <th plain-text>次</th>
-       <th plain-text>皮试</th>
-       <th plain-text>途径</th>
-       <th plain-text>滴速</th>
-       <th plain-text>单剂量</th>
-       <th plain-text>总剂量</th>
-       <th plain-text>服(用)法</th>
-       <th plain-text>金额</th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-       <td>Customer Project 1</td>
-       <td>OK</td>
-      </tr>
-     </tbody>
-    </table>
-   </vaadin-grid>
+   <vaadin-horizontal-layout spacing size-full :expand>
+    <vaadin-grid size-full editable _id="chufang" :expand>
+     <table>
+      <colgroup>
+       <col property-id="序号" sortable>
+       <col property-id="药品名称" sortable>
+       <col property-id="单剂量" sortable>
+       <col property-id="用法" sortable>
+       <col property-id="金额" sortable>
+      </colgroup>
+      <thead>
+       <tr default>
+        <th plain-text>序号</th>
+        <th plain-text>药品名称</th>
+        <th plain-text>单剂量</th>
+        <th plain-text>用法</th>
+        <th plain-text>金额</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>Customer Project 1</td>
+        <td>OK</td>
+        <td>Customer Project 1</td>
+        <td>OK</td>
+        <td>Customer Project 1</td>
+       </tr>
+      </tbody>
+     </table>
+    </vaadin-grid>
+    <vaadin-text-area enabled="false" width="300px" height-full readonly>
+      123466 
+    </vaadin-text-area>
+   </vaadin-horizontal-layout>
    <vaadin-grid-layout spacing width-full>
     <row>
      <column rowspan="2">

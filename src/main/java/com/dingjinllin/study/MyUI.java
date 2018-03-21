@@ -2,6 +2,9 @@ package com.dingjinllin.study;
 
 import javax.servlet.annotation.WebServlet;
 
+import com.dingjinllin.study.binglichufang.Binglichufang;
+import com.dingjinllin.study.binglichufang.bingli.Menzhenbingli;
+import com.dingjinllin.study.binglichufang.zhongyichufang.Zhongyichufang;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
@@ -38,8 +41,14 @@ public class MyUI extends UI {
         layout.setSpacing(true);
 
         setContent(layout);*/
-        Xiyichufang xycf = new Xiyichufang();
-        setContent(xycf);
+//        Binglichufang blcf = new Binglichufang();
+//        setContent(blcf);
+//        Menzhenbingli mzbl = new Menzhenbingli();
+//        setContent(mzbl);
+//        Xiyichufang xycf = new Xiyichufang();
+//        setContent(xycf);
+        Zhongyichufang zycf = new Zhongyichufang();
+        setContent(zycf);
     }
 
     @WebServlet(urlPatterns = "/*", name = "MyUIServlet", asyncSupported = true)
